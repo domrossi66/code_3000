@@ -10,22 +10,10 @@ def train_model(X, y, seed=seed):
     Build a GBM on given data
     """
 
-    """
-    Best rate I got was 0.121 with the following variables:
-
     model = GradientBoostingClassifier(
         learning_rate=0.2,
         n_estimators=200,
-        max_depth=9,
-        subsample=1,
-        min_samples_leaf=1,
-        random_state=seed
-    )
-    """
-    model = GradientBoostingClassifier(
-        learning_rate=0.2,
-        n_estimators=200,
-        max_depth=9,
+        max_depth=1,
         subsample=1,
         min_samples_leaf=1,
         random_state=seed
